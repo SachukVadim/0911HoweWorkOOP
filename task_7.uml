@@ -1,0 +1,29 @@
+
+@startuml
+class Vehicle {
+    +make: str
+    +model: str
+    +year: int
+    +display_info()
+}
+
+class Car {
+    +num_doors: int
+    +fuel_type: str
+    +display_info()
+}
+
+class Motorcycle {
+    +engine_capacity: int
+    +display_info()
+}
+
+class Truck {
+    +max_load: int
+    +display_info()
+}
+
+Vehicle <|-- Car
+Vehicle <|-- Motorcycle
+Vehicle <|-- Truck
+@enduml

@@ -1,0 +1,25 @@
+
+@startuml
+class GraphicObject {
+    +x: int
+    +y: int
+}
+
+class Rectangle {
+    +width: int
+    +height: int
+}
+
+class Clickable {
+    +click()
+}
+
+class Button {
+    +label: str
+    +click()
+}
+
+GraphicObject <|-- Rectangle
+Clickable <|-- Button
+Rectangle <|-- Button
+@enduml
